@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# Run a given command inside the running devenv container
+
+# This assumes that the service is up and running.
+
+docker-compose exec devenv "$@"

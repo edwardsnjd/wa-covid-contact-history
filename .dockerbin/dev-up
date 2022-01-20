@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Start the dev env in the background
+docker-compose up --detach devenv

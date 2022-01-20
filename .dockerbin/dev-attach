@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Attach to the running dev env
+echo "(Attaching... type 'Ctrl-P Ctrl-Q' to detach)"
+docker attach wcch_devenv

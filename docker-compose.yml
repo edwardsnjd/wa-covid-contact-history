@@ -1,0 +1,19 @@
+version: "3.9"
+
+services:
+
+  # The dockerised dev environment
+  devenv:
+    # Build a custom container from the local dockerfile
+    image: denoland/deno:alpine
+    init: true  # deno forks so use tini to reap zombies
+    container_name: wcch_devenv  # pin name for convenient scripting
+    entrypoint: ["ash"]
+
+    # Make local filesystem changes visible inside container
+    working_dir: /home/work
+    volumes: [ .:/home/work ]
+
+    # Make container work with command line
+    tty: true
+    stdin_open: true

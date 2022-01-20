@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Stop the dev container
+docker-compose down
