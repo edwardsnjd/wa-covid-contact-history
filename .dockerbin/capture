@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+dev-exec deno run --allow-net capture.js
