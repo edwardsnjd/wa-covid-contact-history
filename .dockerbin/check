@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+deno fmt && deno lint && deno test --allow-read
